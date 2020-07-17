@@ -1,4 +1,4 @@
-### Intall
+### Installation
 
 ```jsx
 npm i merge-props-utils
