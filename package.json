@@ -1,0 +1,20 @@
+{
+  "name": "merge-props-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": ["merge", "props", "util"],
+  "author": "Johannes Klint",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Johannesklint/merge-props-util.git"
+  },
+  "homepage": "https://github.com/Johannesklint/merge-props-util#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
