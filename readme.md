@@ -1,7 +1,7 @@
 ### Intall
 
 ```jsx
-npm i merge-props-util
+npm i merge-props-utils
 ```
 
 ### Usage
