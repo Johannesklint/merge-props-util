@@ -9,7 +9,7 @@ npm i merge-props-utils
 Pass in one or multiple objects
 
 ```jsx
-import mergeProps from 'merge-props-util'
+import mergeProps from 'merge-props-utils'
 
 function App() {
   const props = {
