@@ -5,6 +5,7 @@ npm i merge-props-utils
 ```
 
 ### Usage
+
 ```jsx
 import mergeProps from 'merge-props-util'
 
@@ -14,13 +15,10 @@ function App() {
     two: "two"
   }
   const merged = mergeProps(props, {
-    onClick: (event) => console.log("clicked", event),
-    onFocus: (event) => console.log("onFocus", event);
+    onClick: (event) => { … },
+    onFocus: (event) => { … },
     className: "some-className",
   })
   return <button {...merged}>Click me!</button>
 }
-```
-
-```jsx
 ```
