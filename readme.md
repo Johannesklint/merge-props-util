@@ -14,11 +14,16 @@ function App() {
     one: "one",
     two: "two"
   }
-  const merged = mergeProps(props, {
-    onClick: (event) => { … },
-    onFocus: (event) => { … },
-    className: "some-className",
-  })
+  const merged = mergeProps(
+    props,
+    {
+      onClick: event => {…},
+      onFocus: event => {…},
+      className: "some-className"
+    },
+    { "data-testid": "some-testid" }
+  )
+  
   return <button {...merged}>Click me!</button>
 }
 ```
