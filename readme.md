@@ -6,6 +6,8 @@ npm i merge-props-utils
 
 ### Usage
 
+Pass in one or multiple objects
+
 ```jsx
 import mergeProps from 'merge-props-util'
 
