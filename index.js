@@ -1,15 +1,21 @@
-function mergeProps(...args) {
-  if (args.length === 1) {
-    return args[0];
-  }
+function isObject(value) {
+  return (
+    typeof value !== "object" &&
+    !(value instanceof Object) &&
+    !(value instanceof Array)
+  );
+}
 
-  return Object.entries(args[1]).reduce((acc, [key, value]) => {
+function mergeProps(...args) {
+  return Object.values(args).reduce((acc, value) => {
+    if (isObject(value)) {
+      throw new Error("Pass in an object");
+    }
     return {
-      ...args[0],
       ...acc,
-      [key]: value,
+      ...value,
     };
   }, {});
 }
 
-module.exports = mergeProps
+module.exports = mergeProps;
